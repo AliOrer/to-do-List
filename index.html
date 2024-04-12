@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+
+    <div id="container"> 
+        <h1>To-Do List<i class="fas fa-plus" onclick="showInput()"></i></h1>
+        <input type="text" onkeypress="pushToDo(this)" placeholder="Add New ToDo" style="display:none;">
+
+        <ul>
+            <li onclick="liDone(this)"> <span class="but-delete" onclick="deleteAction(this)"><i class="fas fa-trash-alt"></i></span>Create List.</li>
+            <!-- <ol>
+                <li onclick="liDone(this)"> <span class="but-delete" onclick="deleteAction(this)"><i class="fas fa-trash-alt"></i></span>Create List 1</li>
+                <li onclick="liDone(this)"> <span class="but-delete" onclick="deleteAction(this)"><i class="fas fa-trash-alt"></i></span>Create List 2</li>
+                <li onclick="liDone(this)"> <span class="but-delete" onclick="deleteAction(this)"><i class="fas fa-trash-alt"></i></span>Create List 3</li>
+            </ol> -->
+            <li onclick="liDone(this)"> <span class="but-delete" onclick="deleteAction(this)"><i class="fas fa-trash-alt"></i></span>Shopping.</li>
+            <li onclick="liDone(this)"> <span class="but-delete" onclick="deleteAction(this)"><i class="fas fa-trash-alt"></i></span>Take the trash out.</li>
+            <!-- <li onclick="liEdit(this)"> <span class="but-edit" onclick="editAction(this)"><i class="far fa-edit fa-1x" style="color:blue"></i></span>Wash the dishes</li> -->
+        </ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
